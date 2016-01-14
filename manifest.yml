@@ -1,0 +1,6 @@
+---
+applications:
+  - name: lummie1
+    instances: 1
+    buildpack: https://github.com/cloudfoundry/go-buildpack.git
+    command: app1
