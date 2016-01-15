@@ -1,6 +1,6 @@
 {
-	"ImportPath": "examples-cfgoapp1",
-	"GoVersion": "go1.5",
+	"ImportPath": "app1",
+	"GoVersion": "go1.5.2",
 	"Deps": [
 		{
 			"ImportPath": "github.com/gorilla/context",

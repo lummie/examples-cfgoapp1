@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/gorilla/mux"
+	"app1/Godeps/_workspace/src/github.com/gorilla/mux"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -17,9 +17,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<head>")
 	fmt.Fprintf(w, "</head>")
 	fmt.Fprintf(w, "<body>")
-	fmt.Fprintf(w, "<br>Hello %s from My Cloud Foundry Instance....</br>", r.URL.Path[1:])
+	fmt.Fprintf(w, "<br>Hello %s from My Cloud Foundry Instance!</br>", r.URL.Path[1:])
 	fmt.Fprintf(w, "<br>Instance# :%s</br>", instance)
-	fmt.Fprintf(w, "<br>Hostname :%v</br>", hostname)
 	fmt.Fprintf(w, "<br>Hostname :%v</br>", hostname)
 	fmt.Fprintf(w, "</body>")
 	fmt.Fprintf(w, "</html>")
